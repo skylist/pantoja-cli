@@ -1,0 +1,27 @@
+import React from 'react'
+import { View, Text, StyleSheet } from 'react-native'
+import PropTypes from 'prop-types'
+
+const <%=props.name%><%=props.type%> =({}) => {
+	return (
+		<View style={styles.container}>
+			<Text><%=props.name%><%=props.type%> criado via pantoja-cli</Text>
+		</View>
+	)
+}
+
+const styles = StyleSheet.create({
+	container:{
+		flex:1
+	}
+})
+
+<%=props.name%><%=props.type%>.propTypes = {
+	
+}
+
+<%=props.name%><%=props.type%>.defaultProps = {
+
+}
+
+export default <%= props.name %><%=props.type%>
